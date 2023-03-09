@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>{% block title %}{% endblock %}</title>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+<div class="header clearfix">
+<nav>
+<ul class="nav nav-pills pull-right">
+<li role="presentation"><a href="/">Home</a></li>
+<li role="presentation"><a href="/site1">Articles</a></li>
+<li role="presentation"><a href="/site2">About</a></li> 
+<li role="presentation"><a href="site3"></a></li>
+</ul>
+<!-- Dropdown menu button -->
+<div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">More sites
+        <span class="caret"></span>
+    </button>
+    <!-- Dropdown menu items -->
+    <ul class="dropdown-menu">
+        <li role="presentation"><a href="#">Option 1</a></li>
+        <li role="presentation"><a href="#">Option 2</a></li>
+        <li role="presentation"><a href="#">Option 3</a></li>
+        <li role="presentation"><a href="#">Option 4</a></li>
+    </ul>
+</div>
+</nav>
+</div>
+{% block body %}
+{% endblock %}
+<footer class="footer">
+<p>© 2023</p>
+</footer>
+</div> 
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

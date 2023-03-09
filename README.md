@@ -21,3 +21,8 @@ jinja2 = "*"
 translate-api = "*"
 ```
 
+# Commandas
+
+```
+uvicorn <filename>:app --reload
+```

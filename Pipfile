@@ -10,6 +10,7 @@ uvicorn = "*"
 jinja2 = "*"
 translate-api = "*"
 selenium = "*"
+pydantic = "*"
 
 [dev-packages]
 
