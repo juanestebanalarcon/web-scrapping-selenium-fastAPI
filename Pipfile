@@ -12,6 +12,7 @@ pydantic = "*"
 googletrans = "*"
 webdriver-manager = "*"
 selenium = "*"
+deep-translator = "*"
 
 [dev-packages]
 
