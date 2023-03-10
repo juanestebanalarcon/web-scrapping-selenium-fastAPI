@@ -11,14 +11,17 @@
 - Include a URL to the live website on your server so we can see that successfully copied it.
 - Let me know how you scraped the pages. Did you use httrack, another piece of software, or a script you wrote your self?
 
-#  Technologies used:
+# Used technologies:
 
 ```
 fastapi = "*"
 beautifulsoup4 = "*"
 uvicorn = "*"
 jinja2 = "*"
-translate-api = "*"
+pydantic = "*"
+googletrans = "*"
+webdriver-manager = "*"
+selenium = "*"
 ```
 
 # Commandas

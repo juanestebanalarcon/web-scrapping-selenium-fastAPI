@@ -1,4 +1,4 @@
-from fastapi import APIRouter, File,UploadFile,Request
+from fastapi import APIRouter, HTTPException
 from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
 import requests
@@ -13,13 +13,12 @@ class SeleniumBody(BaseModel):
     websiteName:str
 
 #Create endpoints:
-@router.get("/translateToHindi")
+@router.get("/getPageContent")
 async def translateHTML(url:SeleniumBody):
-    await service.startSelenium(url.website,url.websiteName)
-    await service.htmlTranslate(url.websiteName)
-    return {"message": "Translation complete"}
+    service.startSelenium(url.website,url.websiteName)
+    return {"message": "Scrapping complete"}
 @router.get("/onlyTranslate")
 async def translateToHindi(url:SeleniumBody):
-    await service.htmlTranslate(url.websiteName)
-    return {"message": "Translation complete"}
+    response = service.htmlTranslate(url.websiteName)
+    return {"message": "Translation complete","response": response}
 #Rendering HTML Content:

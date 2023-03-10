@@ -8,9 +8,10 @@ fastapi = "*"
 beautifulsoup4 = "*"
 uvicorn = "*"
 jinja2 = "*"
-translate-api = "*"
-selenium = "*"
 pydantic = "*"
+googletrans = "*"
+webdriver-manager = "*"
+selenium = "*"
 
 [dev-packages]
 
