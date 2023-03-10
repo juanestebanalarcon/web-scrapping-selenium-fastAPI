@@ -24,7 +24,7 @@ webdriver-manager = "*"
 selenium = "*"
 ```
 
-# Commandas
+# Commands
 
 ```
 uvicorn <filename>:app --reload
