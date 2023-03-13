@@ -11,7 +11,7 @@ import requests
 
 def getHTMLContent(fileName:str):
     # Load HTML file into BeautifulSoup
-    with open(f'../HTML_Transform/{fileName}.html', 'r') as file:
+    with open(f'./HTML_Transform/{fileName}.html', 'r') as file:
         html = file.read()
         soup = BeautifulSoup(html, 'html.parser')
     return soup
